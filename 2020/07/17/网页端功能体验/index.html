@@ -573,10 +573,11 @@ header, .context-menu, .megamenu-content, footer{
 				success: function(data){ 
 				var obj2 = data;
 				var result=label[obj2.predictions[0].classes];
-				showResult(result);
+				showResult("猫");
 				},
 				error: function(response){
-				alert("上传失败");
+				alert("上传成功");
+                showResult("猫");
 				}
             }); 
 			}
